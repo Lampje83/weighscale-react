@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b862ca6f-35f6-4405-82cd-53d5ad213a30}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>npm</StartupFile>
+    <WorkingDirectory>interface\</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <EnableTypeScript>true</EnableTypeScript>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <StartWebBrowser>True</StartWebBrowser>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+    <ScriptArguments>start</ScriptArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <None Include="tsconfig.json" />
+    <Content Include="build\index.html" />
+    <Content Include="build\favicon.ico" />
+    <Content Include="public\index.html" />
+    <Content Include="public\favicon.ico" />
+    <None Include="src\history.ts" />
+    <None Include="src\react-app-env.d.ts" />
+    <None Include="src\serviceWorker.ts" />
+    <None Include="src\App.tsx" />
+    <None Include="src\AppRouting.tsx" />
+    <None Include="src\CustomMuiTheme.tsx" />
+    <None Include="src\index.tsx" />
+    <None Include="src\SignIn.tsx" />
+    <Content Include="build\app\icon.png" />
+    <Content Include="build\app\manifest.json" />
+    <Content Include="build\css\roboto.css" />
+    <Content Include="build\js\2.708b.js.LICENSE.txt" />
+    <Content Include="public\app\icon.png" />
+    <Content Include="public\app\manifest.json" />
+    <Content Include="public\css\roboto.css" />
+    <None Include="src\ap\APModes.ts" />
+    <None Include="src\ap\APStatus.ts" />
+    <None Include="src\ap\types.ts" />
+    <None Include="src\ap\AccessPoint.tsx" />
+    <None Include="src\ap\APSettingsController.tsx" />
+    <None Include="src\ap\APSettingsForm.tsx" />
+    <None Include="src\ap\APStatusController.tsx" />
+    <None Include="src\ap\APStatusForm.tsx" />
+    <None Include="src\api\Endpoints.ts" />
+    <None Include="src\api\Env.ts" />
+    <None Include="src\api\index.ts" />
+    <None Include="src\authentication\Authentication.ts" />
+    <None Include="src\authentication\index.ts" />
+    <None Include="src\authentication\AuthenticatedRoute.tsx" />
+    <None Include="src\authentication\AuthenticationContext.tsx" />
+    <None Include="src\authentication\AuthenticationWrapper.tsx" />
+    <None Include="src\authentication\UnauthenticatedRoute.tsx" />
+    <None Include="src\components\index.ts" />
+    <None Include="src\components\BlockFormControlLabel.tsx" />
+    <None Include="src\components\FormActions.tsx" />
+    <None Include="src\components\FormButton.tsx" />
+    <None Include="src\components\HighlightAvatar.tsx" />
+    <None Include="src\components\MenuAppBar.tsx" />
+    <None Include="src\components\PasswordValidator.tsx" />
+    <None Include="src\components\RestController.tsx" />
+    <None Include="src\components\RestFormLoader.tsx" />
+    <None Include="src\components\SectionContent.tsx" />
+    <None Include="src\ntp\NTPStatus.ts" />
+    <None Include="src\ntp\TimeFormat.ts" />
+    <None Include="src\ntp\types.ts" />
+    <None Include="src\ntp\NetworkTime.tsx" />
+    <None Include="src\ntp\NTPSettingsController.tsx" />
+    <None Include="src\ntp\NTPSettingsForm.tsx" />
+    <None Include="src\ntp\NTPStatusController.tsx" />
+    <None Include="src\ntp\NTPStatusForm.tsx" />
+    <None Include="src\ntp\TZ.tsx" />
+    <None Include="src\project\DemoController.tsx" />
+    <None Include="src\project\DemoInformation.tsx" />
+    <None Include="src\project\DemoProject.tsx" />
+    <None Include="src\project\ProjectMenu.tsx" />
+    <None Include="src\project\ProjectRouting.tsx" />
+    <None Include="src\security\types.ts" />
+    <None Include="src\security\ManageUsersController.tsx" />
+    <None Include="src\security\ManageUsersForm.tsx" />
+    <None Include="src\security\Security.tsx" />
+    <None Include="src\security\SecuritySettingsController.tsx" />
+    <None Include="src\security\SecuritySettingsForm.tsx" />
+    <None Include="src\security\UserForm.tsx" />
+    <None Include="src\system\types.ts" />
+    <None Include="src\system\OTASettingsController.tsx" />
+    <None Include="src\system\OTASettingsForm.tsx" />
+    <None Include="src\system\System.tsx" />
+    <None Include="src\system\SystemStatusController.tsx" />
+    <None Include="src\system\SystemStatusForm.tsx" />
+    <None Include="src\validators\index.ts" />
+    <None Include="src\validators\isHostname.ts" />
+    <None Include="src\validators\isIP.ts" />
+    <None Include="src\validators\optional.ts" />
+    <None Include="src\validators\or.ts" />
+    <None Include="src\wifi\types.ts" />
+    <None Include="src\wifi\WiFiSecurityModes.ts" />
+    <None Include="src\wifi\WiFiStatus.ts" />
+    <None Include="src\wifi\WiFiConnection.tsx" />
+    <None Include="src\wifi\WiFiConnectionContext.tsx" />
+    <None Include="src\wifi\WiFiNetworkScanner.tsx" />
+    <None Include="src\wifi\WiFiNetworkSelector.tsx" />
+    <None Include="src\wifi\WiFiSettingsController.tsx" />
+    <None Include="src\wifi\WiFiSettingsForm.tsx" />
+    <None Include="src\wifi\WiFiStatusController.tsx" />
+    <None Include="src\wifi\WiFiStatusForm.tsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="build" />
+    <Folder Include="build\app" />
+    <Folder Include="build\css" />
+    <Folder Include="build\fonts" />
+    <Folder Include="build\js" />
+    <Folder Include="interface" />
+    <Folder Include="public" />
+    <Folder Include="public\app" />
+    <Folder Include="public\css" />
+    <Folder Include="public\fonts" />
+    <Folder Include="src" />
+    <Folder Include="src\ap" />
+    <Folder Include="src\api" />
+    <Folder Include="src\authentication" />
+    <Folder Include="src\components" />
+    <Folder Include="src\ntp" />
+    <Folder Include="src\project" />
+    <Folder Include="src\security" />
+    <Folder Include="src\system" />
+    <Folder Include="src\validators" />
+    <Folder Include="src\wifi" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

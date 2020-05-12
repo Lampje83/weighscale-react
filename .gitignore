@@ -7,3 +7,8 @@
 /interface/build
 /interface/node_modules
 .vscode
+/.vs
+/Debug
+/interface/.vs/interface/v16
+/interface/bin
+/interface/obj/Debug
