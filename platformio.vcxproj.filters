@@ -21,6 +21,12 @@
     <Filter Include="lib\framework">
       <UniqueIdentifier>{55ea5aff-6be8-40ef-b374-3315f4506472}</UniqueIdentifier>
     </Filter>
+    <Filter Include="TFT_eSPI_Setups">
+      <UniqueIdentifier>{708508f4-ff71-40cb-8ccd-ff25c2ef6a40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts">
+      <UniqueIdentifier>{ad3cfd4c-33f2-49bb-81b4-ed4a2cefd2dd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="platformio.ini" />
@@ -43,6 +49,9 @@
       <Filter>data\config</Filter>
     </None>
     <None Include="README.md" />
+    <None Include="scripts\build_interface.py">
+      <Filter>scripts</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src/DemoProject.cpp">
@@ -89,6 +98,9 @@
     </ClCompile>
     <ClCompile Include="lib\framework\WiFiStatus.cpp">
       <Filter>lib\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ADC.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +172,15 @@
     </ClInclude>
     <ClInclude Include="lib\framework\WWWData.h">
       <Filter>lib\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="TFT_eSPI_Setups\My_Setup.h">
+      <Filter>TFT_eSPI_Setups</Filter>
+    </ClInclude>
+    <ClInclude Include="TFT_eSPI_Setups\My_Setup_Select.h">
+      <Filter>TFT_eSPI_Setups</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ADC.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
