@@ -118,8 +118,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\ADC.h" />
-    <ClInclude Include="TFT_eSPI_Setups\My_Setup.h" />
-    <ClInclude Include="TFT_eSPI_Setups\My_Setup_Select.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src/main.cpp">

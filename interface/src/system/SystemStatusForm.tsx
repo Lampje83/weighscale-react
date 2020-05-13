@@ -10,6 +10,7 @@ import SdStorageIcon from '@material-ui/icons/SdStorage';
 import DataUsageIcon from '@material-ui/icons/DataUsage';
 import AutorenewIcon from '@material-ui/icons/Autorenew';
 import RefreshIcon from '@material-ui/icons/Refresh';
+import BatteryIcon from '@material-ui/icons/BatteryStd';
 
 import { redirectingAuthorizedFetch } from '../authentication';
 import { RestFormProps, FormButton, FormActions } from '../components';
@@ -80,6 +81,15 @@ class SystemStatusForm extends Component<SystemStatusFormProps, SystemStatusForm
           <ListItemText primary="Flash Chip Size" secondary={data.flash_chip_size + ' bytes'} />
         </ListItem>
         <Divider variant="inset" component="li" />
+            <ListItem >
+                <ListItemAvatar>
+                    <Avatar>
+                        <BatteryIcon />
+                    </Avatar>
+                </ListItemAvatar>
+                <ListItemText primary="Battery Voltage" secondary={data.battery_voltage + ' mV'} />
+            </ListItem>
+            <Divider variant="inset" component="li" />
       </Fragment>
     );
   }

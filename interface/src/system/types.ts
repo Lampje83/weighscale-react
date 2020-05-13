@@ -5,6 +5,7 @@ export interface SystemStatus {
   sketch_size: number;
   free_sketch_space: number;
   flash_chip_size: number;
+  battery_voltage: number;
 }
 
 export interface OTASettings {

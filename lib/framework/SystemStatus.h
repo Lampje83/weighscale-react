@@ -17,6 +17,8 @@
 #define MAX_ESP_STATUS_SIZE 1024
 #define SYSTEM_STATUS_SERVICE_PATH "/rest/systemStatus"
 
+#define VBAT_PIN 34
+
 class SystemStatus {
  public:
   SystemStatus(AsyncWebServer* server, SecurityManager* securityManager);
